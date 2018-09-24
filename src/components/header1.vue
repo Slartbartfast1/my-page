@@ -2,20 +2,18 @@
     <nav>
         <div class="logo">
             <i class="el-icon-question"></i>
-            <span>儿乎?</span>
+            <span>111</span>
         </div>
         <div class="user">
-            <a href="#">登陆</a>/
+            <router-link to="/login">登陆</router-link>/
             <a href="#">注册</a>
         </div>
         <div class="search">
-        <el-input v-model="input" placeholder="请输入内容">
+        <el-input  placeholder="请输入内容" suffix-icon="el-icon-search">
         </el-input>
-            <i class="el-icon-search"></i>
         </div>
     </nav>
 </template>
-
 <script>
     export default {
         name: "header1"
@@ -27,8 +25,7 @@ nav{
     height:60px;
     width:100%;
     background-color: darkcyan;
-    position:fixed;
-    top:0;
+
     .logo{
         float:left;
         height:100%;
@@ -56,12 +53,6 @@ nav{
         width:200px;
         height: 60px;
         margin-right:10px;
-        i{
-            position:absolute;
-            right:4px;
-            top:21px;
-            cursor:pointer;
-        }
     }
     .user{
         line-height:60px;
